@@ -1,0 +1,55 @@
+.heads-of-departments {
+    width: 100%;
+    height: auto;
+    padding: 0 50px !important;
+
+    .heads-of-departments__container {
+        width: 100% !important;
+        height: 100% !important;
+
+        .heads-of-departments__title {
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 56px;
+            color: #499EAA;
+            margin: 100px 0;
+            @include sm {
+                font-size: 34px;
+                text-align: center;
+            }
+        }
+
+        .row {
+            margin-bottom: 30px;
+            @include sm {
+                padding: 0 20px;
+            }
+            @include breakpoint (350px) {
+                padding: 0 5px;
+            }
+            .col {
+                .col_body {
+                    display: flex;
+                    align-items: center;
+                    .heads-of-departments__img {
+                        width: 150px;
+                    }
+
+                    .heads-of-departments__text {
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 28px;
+                        color: #DFDFDF;
+                        margin-left: 39px;
+                    }
+                }
+            }
+        }
+        .row:last-child() {
+            margin-bottom: 0;
+            display: flex !important;
+            justify-content: center !important;
+            width: 100vw !important;
+        }
+    }
+}

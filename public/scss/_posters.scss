@@ -1,0 +1,108 @@
+.posters__section {
+    @include sm {
+        display: none;
+    }
+    width: 100vw;
+    height: fit-content;
+    position: relative;
+    padding: 0 20px;
+    overflow-x: hidden;
+    display: flex;
+    .posters__container {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        .poster1 {
+            width: 430px;
+            height: 590px;
+            background-image: url('../assets/poster1.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-top: 200px;
+            @include md {
+                width:  250px !important;
+                height: 300px !important;
+            }
+            @include lg {
+                width: 250px;
+                height: 350px;
+            }
+            @include xl {
+                width: 430px;
+                height: 490px;
+            }
+        }
+        .poster2 {
+            width: 430px;
+            height: 590px;
+            background-image: url('../assets/poster2.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-top: 300px;
+            @include md {
+                width:  250px !important;
+                height: 300px !important;
+            }
+            @include lg {
+                width: 250px;
+                height: 350px;
+            }
+            @include xl {
+                width: 430px;
+                height: 490px;
+            }
+        }
+        .poster3 {
+            width: 430px;
+            height: 590px;
+            background-image: url('../assets/poster3.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-top: 400px;
+            @include md {
+                width:  250px !important;
+                height: 300px !important;
+            }
+            @include lg {
+                width: 250px;
+                height: 350px;
+            }
+            @include xl {
+                width: 430px;
+                height: 490px;
+            }
+        }
+
+        .circle__text {
+            position: absolute;
+            top: 0;
+            right: 50px;
+            animation: circleText 10s linear infinite;
+            @include lg {
+                width: 200px;
+            }
+        }
+    }
+}
+
+@keyframes circleText {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-90deg);
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+    75% {
+        transform: rotate(-270deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+    
+}

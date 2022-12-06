@@ -1,0 +1,71 @@
+.about-textsection {
+    height: fit-content;
+    width: 100%;
+    padding: 0 50px;
+    .about-textsection__container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .about-textsection__text {
+            width: 1264px;
+            background: linear-gradient(103.95deg, rgba(73, 158, 170, 0.054) 18.06%, rgba(73, 158, 170, 0.06) 30.86%, rgba(73, 158, 170, 0.0948) 42.05%, rgba(73, 158, 170, 0.12) 52.55%, rgba(73, 158, 170, 0.1068) 63.53%, rgba(73, 158, 170, 0.0734493) 73.75%, rgba(73, 158, 170, 0.019625) 85.22%);
+            margin-top: 114px;
+            padding: 60px;
+            @include breakpoint (1300px) {
+                width: 1000px;
+            }
+            @include xl {
+                width: 800px;
+            }
+            @include lg {
+                width: 600px;
+            }
+            @include md {
+                width: 550px;
+            }
+            @include sm {
+                width: 450px;
+                padding: 30px;
+            }
+            @include breakpoint (500px) {
+                width: 400px;
+                padding: 40px;
+            }
+            @include breakpoint (400px) {
+                width: 400px;
+                padding: 40px;
+            }
+            @include breakpoint (350px) {
+                width: 350px;
+                padding: 40px;
+            }
+            .text__container {
+                .text__title {
+                    font-weight: 400;
+                    font-size: 48px;
+                    line-height: 56px;
+                    color: #499EAA;
+                    @include sm {
+                        font-size: 32px;
+                        line-height: 36px;
+                    }
+                }
+
+                .text__body {
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 28px;
+                    color: #DFDFDF;
+                    margin-top: 46px;
+                    @include sm {
+                        font-size: 18px;
+                        margin-top: 26px;
+                    }
+                }
+            }
+        }
+    }
+}

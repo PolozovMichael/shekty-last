@@ -1,0 +1,103 @@
+.projects {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 30px;
+    display: flex !important;
+    justify-content: center !important;
+    .projects__container {
+        width: 100%;
+        height: 100%;
+        padding: 0 20px !important;
+        .projects__title {
+            font-weight: 380;
+            font-size: 95px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            margin: 114px 0;
+            @include breakpoint (400px) {
+                font-size: 24px;
+            }
+            @include sm {
+                font-size: 35px !important;
+                text-align: center !important;
+            }
+            @include xl {
+                font-size: 120px;
+                line-height: 110px;
+            }
+
+            @include lg {
+                font-size: 100px;
+                line-height: 90px;
+            }
+
+            @include md {
+                font-size: 80px;
+                line-height: 80px;
+            }
+
+            @include md {
+                font-size: 50px;
+                line-height: 60px;
+            }
+        }
+
+        .row {
+            width: 100% !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+
+            .col {
+                padding: 10px !important;
+                position: relative;
+                cursor: pointer;
+
+                iframe {
+                    display: none;
+                }
+
+                .img-fluid {
+                    width: 100%;
+                }
+
+                .video__title {
+                    color: rgba(255, 255, 255, 0);
+                    font-size: 40px;
+                    letter-spacing: 5px;
+                    font-weight: 395;
+                    position: absolute;
+                    top: 50%;
+                    text-align: center;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-transform: uppercase;
+                    z-index: 2;
+                    transition: all .3s ease-in-out;
+                }
+
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0);
+                    z-index: 1;
+                    transition: all .3s ease-in-out;
+                }
+            }
+
+            .col:hover {
+                .video__title {
+                    color: #fff;
+                }
+
+                .overlay {
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+    }
+}

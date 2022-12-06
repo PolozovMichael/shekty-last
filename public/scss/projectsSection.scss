@@ -1,0 +1,20 @@
+@import './config';
+@import './breakpoints';
+@import './header';
+@import './projectsList';
+@import './footer';
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .content {
+        flex: 1 1 auto;
+    }
+}
